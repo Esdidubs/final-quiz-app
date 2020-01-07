@@ -5,8 +5,8 @@ let questionNumber = 1;
 let correctAnswers = 0;
 let incorrectAnswers = 0;
 let currentQuestion = 0;
-let correctMessage = "That is correct! Way to go!";
-let incorrectMessage = `That is incorrect. The correct answer is: ${STORE[currentQuestion].rightAnswer}`;
+let correctMessage = `That is correct! Way to go! ${STORE[currentQuestion].extraInfo}`;
+let incorrectMessage = `That is incorrect. The correct answer is: ${STORE[currentQuestion].rightAnswer}. ${STORE[currentQuestion].extraInfo}`;
 
 // Handles the display of the scores
 function scores(){
@@ -21,8 +21,9 @@ function scores(){
 function generateQuestion(){
     const questionMake = `
         <form>
+        <h2>Video Game Quiz</h2>
         <fieldset name="question">
-            <legend>Question ${questionNumber}</legend>
+            <legend>Question ${questionNumber} of 10</legend>
             ${STORE[currentQuestion].question}
         </fieldset>
         <fieldset name="answers">
@@ -38,7 +39,8 @@ function generateQuestion(){
         <p class="hidden" id="message">Test</p>
         <p class="hidden wrong" id="error">"Please select an answer."</p>
     `
-    incorrectMessage = `That is incorrect. The correct answer is: ${STORE[currentQuestion].rightAnswer}`;
+    correctMessage = `That is correct! Way to go! ${STORE[currentQuestion].extraInfo}`;
+    incorrectMessage = `That is incorrect. The correct answer is: ${STORE[currentQuestion].rightAnswer}. ${STORE[currentQuestion].extraInfo}`;
     return questionMake;
 }
 
@@ -104,6 +106,7 @@ function guess(){
     if(!$("#error").hasClass("hidden")){
         $("#error").toggleClass("hidden");
     };
+    $("input[type=radio]").attr('disabled', true);
     if($("input[name='answer']:checked").data('value') == STORE[currentQuestion].rightAnswer) {
         $("#message").text(`${correctMessage}`);
         correctAnswers++;
@@ -147,6 +150,7 @@ function results(){
 
     const resultBox = `
     <div class='results'>
+        <h2>Results</h2>
         <p>
             You got ${correctAnswers} out of 10 questions correct. ${scoreMessage}
         </p>
@@ -165,8 +169,9 @@ function restartQuiz() {
     currentQuestion = 0;
     $('.box').html(`
         <form>
+        <h2>Video Game Quiz</h2>
             <fieldset name="intro">
-                <legend>Video Game Quiz</legend>
+                <legend>Try It Out</legend>
                 Test your gaming knowledge with our quiz!
             </fieldset>
             <button id="begin">Begin</button>

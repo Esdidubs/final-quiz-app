@@ -7,7 +7,8 @@ const STORE = [
             "Pac-Man",
             "Ghost-Man"
         ],
-        rightAnswer: "Puck-Man"
+        rightAnswer: "Puck-Man",
+        extraInfo: "People scratched the P to make an F, so they changed the name."
     },  
     { 
         question: "Atari founder Nolan Bushnell also created which business?",
@@ -17,7 +18,8 @@ const STORE = [
             "Chuck E. Cheese's",
             "Dave & Buster's"
         ],
-        rightAnswer: "Chuck E. Cheese's"
+        rightAnswer: "Chuck E. Cheese's",
+        extraInfo: "He had a ban from designing games, so he created a way to still profit from the game industry."
     },
     { 
         question: "Which of the following is not an Xbox exclusive?",
@@ -27,7 +29,8 @@ const STORE = [
             "Gears of War",
             "Forza"
         ],
-        rightAnswer: "Cuphead"
+        rightAnswer: "Cuphead",
+        extraInfo: "It's now available on the Nintendo Switch."
     },
     { 
         question: "Which was not a character in the original Super Smash Bros?",
@@ -37,7 +40,8 @@ const STORE = [
             "Ness",
             "Bowser"
         ],
-        rightAnswer: "Bowser"
+        rightAnswer: "Bowser",
+        extraInfo: "He wasn't added until Super Smash Bros Melee."
     },
     { 
         question: "Which video game company did Steve Jobs work at?",
@@ -47,7 +51,8 @@ const STORE = [
             "Electronic Arts",
             "Atari"
         ],
-        rightAnswer: "Atari"
+        rightAnswer: "Atari",
+        extraInfo: "He designed the game Breakout while at Atari."
     },
     { 
         question: "How many Tetris pieces are there?",
@@ -57,7 +62,8 @@ const STORE = [
             "Seven",
             "Eight"
         ],
-        rightAnswer: "Seven"
+        rightAnswer: "Seven",
+        extraInfo: "There's a T, S, Z, L, backwards L, the line, and the square."
     },
     { 
         question: "Nintendo was originally founded to create what?",
@@ -67,7 +73,8 @@ const STORE = [
             "Computers",
             "Playing cards"
         ],
-        rightAnswer: "Playing cards"
+        rightAnswer: "Playing cards",
+        extraInfo: "They were founded in 1889 and still release playing cards today."
     },
     { 
         question: "Which franchise did Shigeru Miyamoto not create?",
@@ -77,7 +84,8 @@ const STORE = [
             "Donkey Kong",
             "Zelda"
         ],
-        rightAnswer: "Metroid"
+        rightAnswer: "Metroid",
+        extraInfo: "He still helped work on the series though."
     },
     { 
         question: "Tomb Raider's Laura Croft originally had which last name?",
@@ -87,7 +95,8 @@ const STORE = [
             "Creed",
             "Crabbe"
         ],
-        rightAnswer: "Cruz"
+        rightAnswer: "Cruz",
+        extraInfo: "They decided they wanted a different race for the character."
     },
     { 
         question: "The UK edition of FIFA 2001 included which feature?",
@@ -97,6 +106,7 @@ const STORE = [
             "Discounted tickets to the EFL Cup final",
             "A piece of a game-worn jersey"
         ],
-        rightAnswer: "A scratch and sniff disc to smell the pitch"
+        rightAnswer: "A scratch and sniff disc to smell the pitch",
+        extraInfo: "Gran Turismo 2 also had this feature."
     }
 ];

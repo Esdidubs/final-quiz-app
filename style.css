@@ -54,6 +54,13 @@ body {
     display: none;
 }
 
+h2 {
+    font-weight: bold;
+    font-size: 30px;
+    font-family: 'Bangers', cursive;
+    letter-spacing: 0.1em;
+}
+
 legend {
     font-weight: bold;
     font-size: 25px;
@@ -100,6 +107,10 @@ img {
 
     legend {
         font-size: 20px;
+    }
+
+    h2 {
+        font-size: 25px;
     }
 
 }
